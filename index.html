@@ -1,0 +1,510 @@
+    <!---code by Dev Andrew--->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Go Sport</title>
+        <meta charset="UTF-8" />
+        
+<link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+ <link rel="icon" href="img/favicon.png">
+
+        <link rel="stylesheet" href="gofootball1_signup_signinpage.css">
+        <script src = "gofootball1.js">
+        </script>
+        
+    </head>
+    <body id="body">
+        <section id="mysignuppage" class= "secs">
+        <div id= "hhdd" class= "headers">
+            <img src="./img/logo_brush.png" id= "firstlogo" width="50px" height="50px" class= "logos">
+            <button id= "myLogin" class="signbutton" onclick= "loginspage()"> Login </button>
+        </div>
+        
+          <div id="mysignup" class="forms">
+               
+            <form id= "mysignup/signinform" method="post" id="signup" class= "detailsform">
+                
+                
+                <p class= "blodtext"> Sign Up</p>
+                <input type= "Textbox" id="Name" placeholder= "John Doe" class= "ipt" required>
+                <label for= "Name" class="common"><span class="material-symbols-outlined" >
+account_circle
+</span></label>
+                
+                <input type= "Textbox" id="Email" placeholder= "EMAIL" class= "ipt" required>
+                <label for= "Email" class= "common"><span class="material-symbols-outlined" >
+mail
+</span></label>
+                
+                
+               <input type= "Textbox" id="pwd" placeholder= "Password" class= "ipt" required>
+                <label for= "pwd" class="common"><span class="material-symbols-outlined">
+lock
+</span></label>
+                
+                  <input type= "checkbox" id="agree" class"rad" required>
+                <label for= "agree" id="agr">I have read the policies for users and agreeto all its terms<br /> and it conditios</label>
+                  
+                    <input type= "button" id="susub" value ="SIGNUP" class= "submit" onclick="signwel()">
+                    
+            </form>
+        </div>
+        </section>
+        
+        <script>
+
+function loginspage() {
+  let x = document.getElementById("mysignuppage");
+  let y = document.getElementById("myloginpage");
+
+  if (x && y) { 
+    if (x.style.display === "grid") {
+      x.style.display = "none";
+      y.style.display = "grid";
+    } else {
+      x.style.display = "grid";
+      y.style.display = "none";
+    }
+  } else {
+    console.log("Error: Unable to find one or both of the elements");
+  }
+}
+
+function signwel(){
+          
+  let neww = document.getElementById("thirdsecs");
+  let old = document.getElementById("mysignuppage");
+  const dmain = document.getElementById("main");
+  
+  if (old && neww) {
+    if (old.style.display === "grid") {
+      old.style.display = "none";
+      neww.style.display = "grid";
+setTimeout(function() {
+  dmain.style.display = "grid";
+  neww.style.display= "none";
+}, 3000);
+    } 
+    else {
+      old.style.display = "grid";
+      neww.style.display = "none";
+    }
+  } else {
+    console.log("Error: Unable to find one or both of the elements");
+  }
+}
+        </script>
+        
+        
+        
+        <!---second section starts here--->
+        
+        
+             <section id="myloginpage" class= "secs">
+        <div id= "hhdd" class= "headers">
+            <img src="./img/logo_brush.png" id= "secondlogo" width="50px" height="50px"/ class= "logos">
+            <button id= "myLogin" class="signbutton" onclick= "signspage()"> SIGNUP </button>
+        </div>
+        
+          <div id="mysignup" class="forms">
+               
+            <form id= "mysignup/signinform" method="post" id="signup" class= "detailsform">
+                
+                
+                <p class= "blodtext"> LOGIN </p>
+       <input type= "Textbox" id="#logName" placeholder= "John Doe" class= "ipt" required>
+                <label for= "logName" class="common"><span class="material-symbols-outlined" id="ic1">
+account_circle
+</span></label>
+                <input type= "Textbox" id="logEmail" placeholder= "EMAIL" class= "ipt" required>
+                <label for= "logEmail" class= "common"><span class="material-symbols-outlined" id="ic2">
+mail
+</span></label>
+                
+                
+               <input type= "Textbox" id="logpwd" placeholder= "Password" class= "ipt" required>
+                <label for= "logpwd" class="common"><span class="material-symbols-outlined" id ="ic3">
+lock
+</span></label>
+                
+                  
+                  
+                    <input type= "button" id="loglo" value ="LOGIN" class= "submit" onclick="logwel()">
+                    
+            </form>
+        </div>
+        </section>
+        
+        <script>
+function signspage(){
+          
+  let x = document.getElementById("mysignuppage");
+  let y = document.getElementById("myloginpage");
+
+  if (y && x) {
+    if (y.style.display === "grid") {
+      y.style.display = "none";
+      x.style.display = "grid";
+    } else {
+      y.style.display = "grid";
+      x.style.display = "none";
+    }
+  } else {
+    console.log("Error: Unable to find one or both of the elements");
+  }
+}
+
+function logwel(){
+          
+  let neww = document.getElementById("thirdsecs");
+  let old = document.getElementById("myloginpage");
+  const dmain = document.getElementById("main");
+  
+  if (old && neww) {
+    if (old.style.display === "grid") {
+      old.style.display = "none";
+      neww.style.display = "grid";
+setTimeout(function() {
+  dmain.style.display = "grid";
+  neww.style.display= "none";
+}, 3000);
+    } 
+    else {
+      old.style.display = "grid";
+      neww.style.display = "none";
+    }
+  } else {
+    console.log("Error: Unable to find one or both of the elements");
+  }
+}
+
+          
+        </script>
+        
+        
+        <!---third section starts here--->
+        
+        <section id="thirdsecs" class = "secs">
+               <div class="neon-loader">
+                   <p></p>
+               </div>
+               
+<script>
+  
+
+
+</script>
+        </section>
+        <!--- Main Section--->
+        
+        <section id="main">
+            <div id= "bighead" class= "headers">
+            <img src="./img/logo_brush.png" id= "firstlogo" width="30px" height="30px" class= "logos">
+           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 25 25" stroke-width="1.0" stroke="purple" class="w-6 h-6" style="position:absolute;top:15px;left:85%;border:1px solid purple;border-radius:3px;padding-right:3px;margin:0px;width:30px;height:30px;" id="open">
+                  <span class="material-symbols-outlined" id="tabmode">
+dark_mode
+</span> 
+               <div class="greater">
+                      <a href="#" class="txt"><li class="incasetxtt"><span class="material-symbols-outlined" style="position:relative;bottom:0px;font-size:20px;left:0px;padding:0px;border:none;border-radius:0;">
+home
+</span>Home</li></a>
+                 <a href="#" class="txt"><li class="incasetxtt" ><span class="material-symbols-outlined" style="position:relative;bottom:0px;font-size:20px;left:0px;padding:0px;border:none;border-radius:0;">
+sports_martial_arts
+</span>Sport</li></a>
+                  <a href="#" class="txt"><li class="incasetxtt"><span class="material-symbols-outlined" style="position:relative;bottom:0px;font-size:20px;left:0px;padding:0px;border:none;border-radius:0;">
+breaking_news
+</span>Updates</li></a>
+                   <a href="#" class="txt"><li class="incasetxtt"><span class="material-symbols-outlined"style="position:relative;bottom:0px;font-size:20px;left:0px;padding:0px;border:none;border-radius:0;">
+star
+</span>Ranking</li></a>
+                    <a href="#" class="txt"><li class="incasetxtt"><span class="material-symbols-outlined" style="position:relative;bottom:0px;font-size:20px;left:0px;padding:0px;border:none;border-radius:0;">
+emoji_events
+</span>Events</li></a>
+                   <a href="#" class="txt"><li class="incasetxtt"><span class="material-symbols-outlined" style="position:relative;bottom:0px;font-size:20px;left:0px;padding:0px;border:none;border-radius:0;">
+person
+</span>User</li></a>
+
+               </div>
+               
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+</svg>
+
+        </div>
+      <div class="navmenu" id="nav">
+          <div class= "ffna">
+          <img src="./img/logo_brush.png" id= "firstlogo" width="30px" height="30px" >
+          <span class="material-symbols-outlined" id="mymodee">
+dark_mode
+</span> 
+          <span class="material-symbols-outlined" id="closenav">
+cancel
+</span>
+          </div>
+          <div class="ffmain">
+                <a href="#" class="txt"><li class="txtt"><span class="material-symbols-outlined" style="position:relative;bottom:0px;font-size:20px;left:0px;padding:0px;border:none;border-radius:0;">
+home
+</span>Home</li></a>
+                 <a href="#" class="txt"><li class="txtt" ><span class="material-symbols-outlined" style="position:relative;bottom:0px;font-size:20px;left:0px;padding:0px;border:none;border-radius:0;">
+sports_martial_arts
+</span>Sport</li></a>
+                  <a href="#" class="txt"><li class="txtt"><span class="material-symbols-outlined" style="position:relative;bottom:0px;font-size:20px;left:0px;padding:0px;border:none;border-radius:0;">
+breaking_news
+</span>Updates</li></a>
+                   <a href="#" class="txt"><li class="txtt"><span class="material-symbols-outlined"style="position:relative;bottom:0px;font-size:20px;left:0px;padding:0px;border:none;border-radius:0;">
+star
+</span>Ranking</li></a>
+                    <a href="#" class="txt"><li class="txtt"><span class="material-symbols-outlined" style="position:relative;bottom:0px;font-size:20px;left:0px;padding:0px;border:none;border-radius:0;">
+emoji_events
+</span>Events</li></a>
+                   <a href="#" class="txt"><li class="txtt"><span class="material-symbols-outlined" style="position:relative;bottom:0px;font-size:20px;left:0px;padding:0px;border:none;border-radius:0;">
+person
+</span>User</li></a>
+          </div>
+      </div>
+      
+      
+         <div id="mydiy"></div>
+      <div id="welmes" class="mainpart">
+          <p  class="txtt">WELCOME TO,</p>
+          <p  class="txtt">GO SPORTS</p>
+          <p id="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+      </div>
+        <div id="mainimggalery" class="mainpart">
+        <div class="img" id="one"></div>
+        <div class="img" id="two"></div>
+        <div class="img" id="three"></div>
+        <div class="img" id="four"></div>
+        <div class="img" id="five"></div>
+        <div class="img" id="six"></div>
+        <div class="img" id="seven"></div>
+        <div class="img" id="eight"></div>
+        <div class="img" id="nine"></div>
+        <div class="img" id="ten"></div>
+      </div>
+      <div id="mainsubinfo1" class="mainpart">
+          <p class="txtt">Get major info on sport update </p>
+          <p class="lorem">
+              Lorem ipsum dolor sit amet, consectetur<br/> adipiscing elit, sed do eiusmod tempor <br/>incididunt ut labore et dolore magna aliqua.<br/> Ut enim ad minim veniam, quis nostrud exercitation<br/> ullamco laboris nisi ut aliquip ex ea commodo<br/> consequat. Duis aute irure dolor in reprehenderit<br/> in voluptate velit esse cillum dolore eu<br/> fugiat nulla pariatur. Excepteur sint occaecat <br/> cupidatat non proident, sunt in culpa qui officia deserunt <br/> mollit anim id est laborum.
+          </p>
+          <img src = "./img/basketball.jpg"class= "learnimg"/>
+          <button id ="learnbtn" class= "txt">LEARN MORE</button>
+      </div>
+      <div id="mainsubinfo2" class="mainpart">
+          <p class="leaddr">LEADERBOARD <span class="material-symbols-outlined" style="position:relative;bottom:0px;font-size:20px;left:0px;padding:0px;border:none;border-radius:0;">
+social_leaderboard
+</span></p>
+          <div id= "leaderboardtwo" class="tops"><span class="material-symbols-outlined" style="position:relative;bottom:0px;font-size:30px;left:0px;padding:0px;border:none;border-radius:0;color:#90EE90;">
+workspace_premium
+</span></div>
+          <div id= "leaderboardone" class="tops"><span class="material-symbols-outlined" style="position:relative;bottom:0px;font-size:50px;left:0px;padding:0px;border:none;border-radius:0;color:#FFD700;">
+rewarded_ads
+</span></div>
+          <div id= "leaderboardthree" class="tops"><span class="material-symbols-outlined" style="position:relative;bottom:0px;font-size:30px;left:0px;padding:0px;border:none;border-radius:0;color:#CD853F;"> 
+workspace_premium
+</span></div>
+      </div>
+      
+      
+        <div id="mainsubinfo4" class="mainpart" >
+          <p class="txtt">START TODAY WITH US </p>
+          <p class="lorrem">
+              Lorem ipsum dolor sit amet, consectetur<br/> adipiscing elit, sed do eiusmod tempor <br/>incididunt ut labore et dolore magna aliqua.<br/> Ut enim ad minim veniam, quis nostrud exercitation<br/> ullamco laboris nisi ut aliquip ex ea commodo<br/> consequat. Duis aute irure dolor in reprehenderit<br/> in voluptate velit esse cillum dolore eu<br/> fugiat nulla pariatur. Excepteur sint occaecat <br/> cupidatat non proident, sunt in culpa qui officia deserunt <br/> mollit anim id est laborum.
+          </p>
+          <img src = "./img/3.jpg"class= "learnnimg"/>
+          <button id ="learnnbtn" class= "txt">LEARN MORE</button>
+      </div>
+           
+       
+      <div id="mainfooter" class="mainpart">
+  
+  <ul class="unorder">
+      <li class="okay"><a href="#" class="impl">Home</a></li>
+      <li class="okay"><a href="#" class="impl">About</a></li>
+      <li class="okay"><a href="#" class="impl">Sports</a></li>
+      <li class="okay"><a href="#" class="impl">Captains</a></li>
+      <li class="okay"><a href="#" class="impl">Contact</a></li>
+      </ul>
+<div class="lasstly">
+      <p class="loresms">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                
+      <p class="coppy">&copy; 2024 Andrew Codes</p>
+      
+</div>
+
+      </div>    
+      <script>
+  /***mousemove event logic***/
+  const div = document.getElementById("mydiy");
+document.addEventListener('mousemove', function(e){
+    var x = e.clientX;
+    var y = e.clientY;
+    
+    div.style.left=x - (div.offsetWidth / 2) +"px"; /* Add this line */
+    div.style.top=y - (div.offsetHeight / 2) + "px"; /* Add this line */
+})
+
+/***end of logic***/
+ const open = document.getElementById("open");
+const nav = document.getElementsByClassName("navmenu")[0];
+
+/***open nav logic***/
+open.onclick = e => {
+    if (nav.style.height === "0px" || nav.style.height  === "") {
+        nav.style.height = "400px";
+        
+    } else if (nav.style.height === "400") {
+        nav.style.height  = "0px";
+        
+    }
+    else{
+        console.log("err")
+    }
+};
+ 
+ 
+ /***close nav logic***/
+const close = document.getElementById("closenav");
+close.onclick = r => {
+    if (nav.style.height === "400px" || nav.style.height  === "") {
+        nav.style.height = "0";
+        
+    } else if (nav.style.height === "0") {
+        nav.style.height  = "400px";
+        
+    }
+    else{
+        console.log("err")
+    }
+};
+
+/***secondmode logic***/
+
+const mode = document.getElementById("mymodee");
+const main = document.getElementById("main");
+const text = document.getElementsByClassName("txtt");
+const tt =document.getElementsByClassName("incasetxtt");
+const btn = document.getElementsByClassName("learnbtn");
+const body = document.getElementById("body");
+
+mode.onclick = e => {
+   if (mode.innerHTML.trim() === "dark_mode") {
+     main.style.backgroundColor = "#F3F8FF";
+     body.style.backgroundColor = "#f3f8ff";
+     mode.innerHTML = "light_mode";  
+     
+     
+        for (let i = 0; i < text.length; i++) {
+        text[i].style.color = "#121212";
+     }
+     for (let i = 0; i < tt.length; i++) {
+        tt[i].style.color = "#121212";
+     }
+     for (let i = 0; i < btn.length; i++) {
+       btn[i].style.color = "#121212";
+       }
+   }
+   else if (mode.innerHTML.trim() === "light_mode") {
+     main.style.backgroundColor = "#121212";
+     body.style.backgroundColor = "#121212";
+     mode.innerHTML = "dark_mode";  
+     
+     for (let i = 0; i < btn.length; i++) {
+       btn[i].style.color = "#CBE4DE";
+       }
+      
+     
+     for (let i = 0; i < text.length; i++) {
+       text[i].style.color = "#CBE4DE";
+       }
+       
+     }
+     for (let i = 0; i < tt.length; i++) {
+       tt[i].style.color = "#CBE4DE";
+       }
+     }
+     
+     
+     
+     
+     
+     
+     /***first logic***/
+
+const smode = document.getElementById("tabmode");
+
+
+smode.onclick = e => {
+   if (smode.innerHTML.trim() === "dark_mode") {
+     main.style.backgroundColor = "#F3F8FF";
+     body.style.backgroundColor = "#f3f8ff";
+     smode.innerHTML = "light_mode";  
+     
+        for (let i = 0; i < tt.length; i++) {
+        tt[i].style.color = "#121212";
+     }
+        
+      for (let i = 0; i < text.length; i++) {
+       text[i].style.color = "#121212";
+     }
+   }
+   else if (smode.innerHTML.trim() === "light_mode") {
+     main.style.backgroundColor = "#121212";
+     body.style.backgroundColor = "#121212";
+     smode.innerHTML = "dark_mode";  
+     
+      for (let i = 0; i < text.length; i++) {
+       text[i].style.color = "#CBE4DE";
+     }
+     
+     for (let i = 0; i < tt.length; i++) {
+       tt[i].style.color = "#CBE4DE";
+       }
+       
+     }       
+     }
+     
+     
+     
+     document.body.addEventListener("click", (event) => {
+  const clickedElement = event.target,
+    imgs = document.querySelectorAll(".img");
+
+  if (!clickedElement.classList.contains("img")) {
+    imgs.forEach((img) => img.classList.remove("open"));
+    return;
+  }
+
+  if (clickedElement.classList.contains("open")) {
+    clickedElement.classList.remove("open");
+    return;
+  }
+
+  imgs.forEach((img) => img.classList.remove("open"));
+  clickedElement.classList.add("open");
+});
+
+document.body.addEventListener("click", (event) => {});
+
+      </script>
+        </section>
+    </body>
+</html>
